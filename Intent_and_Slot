@@ -1,0 +1,132 @@
+{
+  "languageModel": {
+    "types": [
+      {
+        "name": "ListOfServerName",
+        "values": [
+          {
+            "id": "2",
+            "name": {
+              "value": "デービーサーバー",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "1",
+            "name": {
+              "value": "ウェブサーバー",
+              "synonyms": []
+            }
+          }
+        ]
+      }
+    ],
+    "intents": [
+      {
+        "name": "AMAZON.CancelIntent",
+        "samples": [
+          "やめて",
+          "やっぱやめた",
+          "キャンセルして",
+          "待った",
+          "キャンセル",
+          "cancel",
+          "やめ"
+        ]
+      },
+      {
+        "name": "AMAZON.HelpIntent",
+        "samples": [
+          "使い方教えて",
+          "どうしたらいい",
+          "使い方",
+          "どうしたら",
+          "ヘルプ",
+          "help",
+          "help me"
+        ]
+      },
+      {
+        "name": "AMAZON.StopIntent",
+        "samples": [
+          "おしまい",
+          "もういいよ",
+          "おわり",
+          "さようなら",
+          "ご苦労さん",
+          "ご苦労"
+        ]
+      },
+      {
+        "name": "RebootIntent",
+        "samples": [
+          "{ServerName} 再起動して",
+          "{ServerName} 再起動",
+          "{ServerName} リブートして",
+          "{ServerName} リブート",
+          "reboot {ServerName}",
+          "{ServerName} を再起動して",
+          "{ServerName} を再起動",
+          "{ServerName} をリブートして",
+          "{ServerName} をリブート"
+        ],
+        "slots": [
+          {
+            "name": "ServerName",
+            "type": "ListOfServerName"
+          }
+        ]
+      },
+      {
+        "name": "StartIntent",
+        "samples": [
+          "{ServerName} 起動して",
+          "{ServerName} 起動",
+          "{ServerName} スタートして",
+          "{ServerName} スタート",
+          "start {ServerName}",
+          "{ServerName} を起動して",
+          "{ServerName} を起動",
+          "{ServerName} をスタートして",
+          "{ServerName} をスタート",
+          "{ServerName} 立ち上げて",
+          "{ServerName} を立ち上げて"
+        ],
+        "slots": [
+          {
+            "name": "ServerName",
+            "type": "ListOfServerName"
+          }
+        ]
+      },
+      {
+        "name": "StopIntent",
+        "samples": [
+          "{ServerName} 停止して",
+          "{ServerName} 停止",
+          "{ServerName} ストップして",
+          "{ServerName} ストップ",
+          "stop {ServerName}",
+          "{ServerName} シャットダウンして",
+          "{ServerName} シャットダウン",
+          "shutdown {ServerName}",
+          "{ServerName} 止めて",
+          "{ServerName} を停止して",
+          "{ServerName} を停止",
+          "{ServerName} をストップして",
+          "{ServerName} をストップ",
+          "{ServerName} をシャットダウンして",
+          "{ServerName} をシャットダウン",
+          "{ServerName} を止めて"
+        ],
+        "slots": [
+          {
+            "name": "ServerName",
+            "type": "ListOfServerName"
+          }
+        ]
+      }
+    ],
+    "invocationName": "サーバー起動"
+  }
+}
